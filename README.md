@@ -42,33 +42,6 @@ This project implements a **Decoupled Architecture**, separating the heavy data 
 3.  **Prediction:** When a user selects a *Kelurahan*, the backend runs the ML model against historical patterns for that specific topography.
 4.  **Presentation:** The API sends JSON data to the Frontend, where it is rendered into easy-to-read cards and graphs.
 
-## 🛠️ Installation & Setup
-
-If you want to run this project locally:
-
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/yourusername/batang-weather-forecast.git](https://github.com/yourusername/batang-weather-forecast.git)
-    cd batang-weather-forecast
-    ```
-
-2.  **Set up the Environment**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Configure Database**
-    * Import the provided `database_schema.sql` to your local MySQL.
-    * Update `config.py` with your database credentials.
-
-4.  **Run the Server**
-    ```bash
-    python app.py
-    ```
-
-5.  **Open in Browser**
-    Visit `http://localhost:5000`
-
 ## 🧠 Model & Dataset
 
 * **Dataset Source:** [BMKG Open Data](https://data.bmkg.go.id/)
