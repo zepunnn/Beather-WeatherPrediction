@@ -47,7 +47,7 @@ This project uses a **decoupled architecture** to ensure scalability, clean data
 ## 📁 Project Folder Structure
 
 A clean, scalable architecture separating backend, machine learning assets, and the TypeScript frontend.
-
+"""
 📦 beather
 │
 ├─ 📁 app (FastAPI Backend)
@@ -86,7 +86,7 @@ A clean, scalable architecture separating backend, machine learning assets, and 
 │   └─ 📄 package.json
 │
 └─ 📄 README.md
-
+"""
 ---
 
 ## 🗺️ System Architecture Diagram
