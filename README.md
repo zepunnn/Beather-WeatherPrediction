@@ -45,46 +45,47 @@ This project uses a **decoupled architecture** to ensure scalability, clean data
 ---
 
 ## 📁 Project Folder Structure
-beather/
-│
-├── app/ # Backend (FastAPI)
-│ ├── main.py # API entry point
-│ ├── database.py # MySQL connection
-│ ├── routers/
-│ │ └── prediction.py # Weather prediction API routes
-│ ├── services/
-│ │ └── prediction_service.py
-│ ├── models/
-│ │ ├── model_loader.py # Load/train ML model
-│ │ └── ml_model.pkl # Saved ML model
-│ ├── schemas/
-│ │ └── prediction_schema.py
-│ └── utils/
-│ ├── import_data.py # Fetch BMKG Open Data
-│ └── preprocessing.py # Data cleaning helpers
-│
-├── ml_model/ # Offline ML workspace
-│ ├── train_model.ipynb # Notebook for experimentation
-│ ├── training_script.py # Offline training
-│ ├── export_dataset.py # Export DB → CSV
-│ └── dataset/
-│ └── weather_data.csv # Raw dataset
-│
-├── database/
-│ ├── schema.sql # MySQL table definitions
-│ └── seed.sql # Optional sample data
-│
-├── frontend/ # TypeScript Web App
-│ ├── src/
-│ │ ├── index.ts # Main TS entry
-│ │ ├── components/
-│ │ ├── pages/
-│ │ └── services/
-│ └── package.json
-│
-└── README.md
+
 A clean, scalable architecture separating backend, machine learning assets, and the TypeScript frontend.
 
+📦 beather
+│
+├─ 📁 app (FastAPI Backend)
+│   ├─ 📄 main.py
+│   ├─ 📄 database.py
+│   ├─ 📁 routers
+│   │    └─ 📄 prediction.py
+│   ├─ 📁 services
+│   │    └─ 📄 prediction_service.py
+│   ├─ 📁 models
+│   │    ├─ 📄 model_loader.py
+│   │    └─ 📦 ml_model.pkl
+│   ├─ 📁 schemas
+│   │    └─ 📄 prediction_schema.py
+│   └─ 📁 utils
+│        ├─ 📄 import_data.py
+│        └─ 📄 preprocessing.py
+│
+├─ 📁 ml_model (ML Workspace)
+│   ├─ 📄 train_model.ipynb
+│   ├─ 📄 training_script.py
+│   ├─ 📄 export_dataset.py
+│   └─ 📁 dataset
+│        └─ 📄 weather_data.csv
+│
+├─ 📁 database
+│   ├─ 📄 schema.sql
+│   └─ 📄 seed.sql
+│
+├─ 📁 frontend (TypeScript Web App)
+│   ├─ 📁 src
+│   │    ├─ 📄 index.ts
+│   │    ├─ 📁 components
+│   │    ├─ 📁 pages
+│   │    └─ 📁 services
+│   └─ 📄 package.json
+│
+└─ 📄 README.md
 
 ---
 
